@@ -12,12 +12,17 @@ module.exports = {
       animation: {
         appear: 'appear .25s forwards',
         disapear: 'appear .25s reverse forwards',
+        grow: 'scale .25s forwards'
       },
       keyframes: {
         appear: {
           from: { opacity: 0 },
           to: { opacity: 1 },
         },
+        scale: {
+          from: { transform: 'scale(1)' },
+          to: { transform: 'scale(1.5)' },
+        }
 
 
       },
