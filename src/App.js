@@ -9,6 +9,8 @@ import { Label } from './components/Details/Label';
 import { Board, Phase } from './components/Phases/Phase';
 import { Button } from './components/Utility/Button';
 import SVG from './SVG';
+import { UtilityButton } from './components/Utility/UtilityButton';
+import { Header } from './components/Utility/Header';
 
 
 
@@ -19,6 +21,7 @@ function App() {
   // console.log(puzzleList);
 
   const [state, setState] = useState(0)
+  const [phase, setPhase] = useState('animate-appear')
 
 
   const getGridSize = () => {
@@ -33,32 +36,46 @@ function App() {
 
   }
 
+  const handlePhase = (e) => {
+
+    // console.log(e.target);
+    setState(parseInt(e.target.textContent) - 1)
+
+  }
+
+
 
   return (
-    <div style={{ height: window.innerHeight }} className="font-sans bg-stone-100">
-      <main className='flex flex-col h-full w-full justify-start items-center text-center text-stone-700'>
+    <div style={{ height: window.innerHeight }} className="font-sans ">
+      <Header />
+      <main className='flex flex-col h-full w-full justify-start items-center text-center text-stone-700 bg-stone-100 pt-[45px]'>
 
-
-        <Divider />
-
-        <Label label={`Phase ${state + 1}`} />
         <Phase>
           {getGridSize()}
         </Phase>
 
-        <div className='flex w-2/3 justify-around font-default'>
-          <Button icon={1} id={'first'} click={() => setState(0)} state={state} />
-          <SVG title={'next'} />
-          <Button icon={2} id={'second'} click={() => setState(1)} state={state} />
-          <SVG title={'next'} />
-          <Button icon={3} id={'third'} click={() => setState(2)} state={state} />
+
+
+        <div className='flex justify-between w-full px-8 my-4'>
+          <div className='flex justify-center items-center font-default '>
+          <UtilityButton value={1} click={handlePhase} state={state} />
+          <UtilityButton value={2} click={handlePhase} state={state} />
+          <UtilityButton value={3} click={handlePhase} state={state} />
+            
+          </div>
+          <div className='flex flex-row-reverse'>
+            <UtilityButton type={'edit'} />
+            <UtilityButton type={'close'} />
+          </div>
+
+
         </div>
 
         {/* <div className='my-2 text-sm text-stone-500'>Edited by THE_POET</div> */}
 
         <Divider />
 
-        <Label label={'Directions'} />
+        {/* <Label label={'Directions'} /> */}
         <Directions>
           <UnitHint
             from={'text-stone-500'}
@@ -69,6 +86,14 @@ function App() {
             to={'text-stone-500'}
             spacesAway={'four'} />
           <UnitHint
+            from={'text-violet-500'}
+            to={'text-green-500'}
+            spacesAway={'three'} />
+            <UnitHint
+            from={'text-violet-500'}
+            to={'text-green-500'}
+            spacesAway={'three'} />
+            <UnitHint
             from={'text-violet-500'}
             to={'text-green-500'}
             spacesAway={'three'} />
