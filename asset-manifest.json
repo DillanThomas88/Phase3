@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/Phase3/static/css/main.56cf18c0.css",
-    "main.js": "/Phase3/static/js/main.291e1892.js",
+    "main.css": "/Phase3/static/css/main.c1d4f268.css",
+    "main.js": "/Phase3/static/js/main.8314578c.js",
     "static/js/787.ca78f21f.chunk.js": "/Phase3/static/js/787.ca78f21f.chunk.js",
     "index.html": "/Phase3/index.html",
+    "static/media/puzzle.svg": "/Phase3/static/media/puzzle.cf7467ff6ad56ba3413034929474f8a4.svg",
     "static/media/help.svg": "/Phase3/static/media/help.518073ca59d059904eade329a850476f.svg",
     "static/media/next.svg": "/Phase3/static/media/next.ce461b8f08ff6a869f2a7248398ed02a.svg",
     "static/media/delete.svg": "/Phase3/static/media/delete.d34b5cb04039724c8f1a183c316427c0.svg",
@@ -13,12 +14,12 @@
     "static/media/complete.svg": "/Phase3/static/media/complete.f0a4ff93c9c267f94afe99b2f2faa40d.svg",
     "static/media/not.svg": "/Phase3/static/media/not.bf92114662f223f839d40a226a9174e1.svg",
     "static/media/exclamation.svg": "/Phase3/static/media/exclamation.7bb53d17eafd47be7bc9e02871d89114.svg",
-    "main.56cf18c0.css.map": "/Phase3/static/css/main.56cf18c0.css.map",
-    "main.291e1892.js.map": "/Phase3/static/js/main.291e1892.js.map",
+    "main.c1d4f268.css.map": "/Phase3/static/css/main.c1d4f268.css.map",
+    "main.8314578c.js.map": "/Phase3/static/js/main.8314578c.js.map",
     "787.ca78f21f.chunk.js.map": "/Phase3/static/js/787.ca78f21f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56cf18c0.css",
-    "static/js/main.291e1892.js"
+    "static/css/main.c1d4f268.css",
+    "static/js/main.8314578c.js"
   ]
 }
