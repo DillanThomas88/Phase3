@@ -3,11 +3,12 @@
 export function UnitHint({
     from,
     to,
-    spacesAway
+    spacesAway,
+    animation
 }) {
     return (
-        <p className='px-2 text-stone-800 font-sans text-sm'>
-            - <b className={from}>This</b> is {spacesAway} units away from <b className={to}>this.</b>
+        <p className={`${animation} text-stone-800 font-sans text-sm w-full h-full flex items-center justify-center`}>
+            <b className={`${from} mr-1`}>This</b> is {spacesAway} units away from <b className={`${to} ml-1`}>this.</b>
         </p>
     )
 }

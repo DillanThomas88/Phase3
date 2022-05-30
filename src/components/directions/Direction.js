@@ -1,11 +1,12 @@
 export function Directions({ children }) {
     return (
-        <div className="min-h-[100px] max-h-[100px] 
-    overflow-y-scroll my-4 px-2 w-3/4
-    flex flex-col justify-center items-start 
+        <div className="relative h-[125px] mt-4
+    overflow-y-scroll overflow-x-hidden w-11/12
+    flex flex-col justify-start items-start 
     bg-white border-[1px] border-neutral-300 
-    shadow-md shadow-neutral-200 rounded-md"
+     rounded-md"
         >
+            <div className="absolute w-full h-full flex justify-center items-center"></div>
 
             {children}
         </div>

@@ -9,6 +9,9 @@ import {ReactComponent as Close} from './close.svg'
 import {ReactComponent as Not} from './not.svg'
 import {ReactComponent as Edit} from './edit.svg'
 import {ReactComponent as Menu} from './menu.svg'
+import {ReactComponent as Puzzle} from './puzzle.svg'
+import {ReactComponent as Contact} from './contact.svg'
+
 
 function SVG({title, classes}) {
     const svg = {
@@ -19,9 +22,11 @@ function SVG({title, classes}) {
         help: <Help className={classes} />,
         next: <Next className={classes} />,
         close: <Close className={classes} />,
-        not: <Not className={classes} />,
+        not: <Not className={`${classes} scale-125`} />,
         edit: <Edit className={classes} />,
         menu: <Menu className={classes}  />,
+        puzzle: <Puzzle className={classes} />,
+        contact: <Contact className={classes} />,
     }
     return(<>
         {svg[title]}
